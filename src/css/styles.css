@@ -1,0 +1,78 @@
+:root {
+  --font-family: "Inter", sans-serif;
+  --second-family: "HeadlandOne", sans-serif;
+  --third-family: "Hammersmith One", sans-serif;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+/* ============================================HEADER============================================================= */
+.item-link {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 20px;
+}
+.login-button {
+  font-size: 20px;
+  font-family: var(--second-family);
+}
+
+.header-input {
+  appearance: none;
+  width: 35px;
+  height: 20px;
+  border: 2px solid rgb(251, 255, 0);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.header-input::after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: rgb(240, 11, 11);
+}
+.header-input:checked {
+  justify-content: flex-end;
+}
+.header-input:checked::after {
+  background-color: blue;
+}
+label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+/* ============================================MAIN============================================================= */
+.hero-subscrib {
+  font-family: var(--second-family);
+}
+
+.hero-appeal {
+  font-family: var(--font-family);
+
+  font-size: 20px;
+}
+.link-trailer {
+  font-family: var(--second-family);
+}
+.quote {
+  font-family: var(--font-family);
+  font-size: 36px;
+}
+.quote-author {
+  font-family: var(--font-family);
+}
+/* ============================================NAWI============================================================= */
+.nawi-title {
+  font-family: var(--second-family);
+  font-size: 32px;
+}
+.nawi-translation {
+  font-family: var(--second-family);
+}
