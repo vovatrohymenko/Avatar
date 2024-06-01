@@ -18,12 +18,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./src/css/styles.css" />
     <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
   <body>
     <header class="header">
-      <div class="container header-container">
+      <div class="header-container">
         <a class="header-logotype" href="#"
           ><img
             class="logotype-img"
@@ -33,13 +33,13 @@
         <nav class="header-menu">
           <ul class="menu-list">
             <li class="menu-item">
-              <a class="item-link" href="#">Головна</a>
+              <a class="menu-link" href="#">Головна</a>
             </li>
             <li class="menu-item">
-              <a class="item-link" href="#">Про нас</a>
+              <a class="menu-link" href="#">Про нас</a>
             </li>
             <li class="menu-item">
-              <a class="item-link" href="#">Контакти</a>
+              <a class="menu-link" href="#">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -53,79 +53,117 @@
     </header>
     <main class="main">
       <section class="hero">
-        <div class="hero-content">
-          <p class="hero-appeal">
-            Oe perlltxe hu tsamsiyu! Ngari hu Eywa salew tirea, tokx 'ì'awn slu
-            Na'viyä hapxì. Säwem nìayoeng!
-          </p>
-          <p class="hero-appeal">
-            Хоробрий воїне, звертаюсь до тебе! Твій дух йде з Ейвою, твоє тіло
-            залишається, щоб стати частиною Народу. Борись разом з нами!
-          </p>
-          <a class="hero-subscrib" href="#">Приєднатися до клану</a>
+        <div class="container hero-container">
+          <div class="hero-content">
+            <p class="hero-appeal">
+              Oe perlltxe hu tsamsiyu! Ngari hu Eywa salew tirea, tokx 'ì'awn
+              slu Na'viyä hapxì. Säwem nìayoeng!
+            </p>
+            <p class="hero-appeal">
+              Хоробрий воїне, звертаюсь до тебе! Твій дух йде з Ейвою, твоє тіло
+              залишається, щоб стати частиною Народу. Борись разом з нами!
+            </p>
+            <a class="hero-subscrib" href="#">Приєднатися до клану</a>
+          </div>
+
+          <ul class="hero-list">
+            <li class="hero-item">
+              <a class="hero-link" href="https://www.instagram.com/"
+                ><img src="./src/images/instagram.svg" alt="instagram"
+              /></a>
+            </li>
+            <li class="hero-item">
+              <a class="hero-link" href="https://x.com/"
+                ><img src="./src/images/twitter.svg" alt="twitter"
+              /></a>
+            </li>
+            <li class="hero-item">
+              <a class="hero-link" href="https://www.youtube.com/"
+                ><img src="./src/images/youtube.svg" alt="youtube"
+              /></a>
+            </li>
+          </ul>
         </div>
-        <ul class="hero-list">
-          <li class="hero-item">
-            <a class="hero-link" href="https://www.instagram.com/"
-              ><img src="./src/images/instagram.svg" alt="instagram"
-            /></a>
-          </li>
-          <li class="hero-item">
-            <a class="hero-link" href="https://x.com/"
-              ><img src="./src/images/twitter.svg" alt="twitter"
-            /></a>
-          </li>
-          <li class="hero-item">
-            <a class="hero-link" href="https://www.youtube.com/"
-              ><img src="./src/images/youtube.svg" alt="youtube"
-            /></a>
-          </li>
-        </ul>
       </section>
       <section class="quotes">
-        <h3 class="quote">
-          “БАГАТО ЛЮДЕЙ З НЕБА ПРИЙДЕ. ВОНИ ПРИЙДУТЬ, ЯК ГРОЗА, ЯКА НІКОЛИ НЕ
-          ЗАКІНЧУЄТЬСЯ.”
-        </h3>
-        <p class="quote-author">Джейк Саллі</p>
+        <div class="container">
+          <h3 class="quote">
+            “БАГАТО ЛЮДЕЙ З НЕБА ПРИЙДЕ. ВОНИ ПРИЙДУТЬ, ЯК ГРОЗА, ЯКА НІКОЛИ НЕ
+            ЗАКІНЧУЄТЬСЯ.”
+          </h3>
+          <p class="quote-author">Джейк Саллі</p>
+        </div>
+      </section>
+
+      <section class="trailer">
+        <div class="container">
+          <a
+            class="link-trailer"
+            href="https://www.youtube.com/watch?v=E8Qe0vS_I3I"
+            >Дивитись трейлер</a
+          >
+        </div>
+      </section>
+      <section class="quotes">
+        <div class="container">
+          <h3 class="quote">
+            “ВСЯ ЕНЕРГІЯ ЛИШЕ ЗАПОЗИЧЕНА, ОДНОГО ДНЯ ЇЇ ДОВЕДЕТЬСЯ ПОВЕРНУТИ.”
+          </h3>
+          <p class="quote-author">Джейк Саллі</p>
+        </div>
+      </section>
+      <section class="nawi">
+        <div class="container">
+          <h2 class="nawi-title">Вчимо мову На’ві</h2>
+          <ul class="nawi-list">
+            <li class="nawi-item">
+              <article class="nawi-carts">
+                <p class="nawi-translation">Привіт</p>
+                <p class="nawi-translation">Kaltxì</p>
+              </article>
+            </li>
+            <li class="nawi-item">
+              <article class="nawi-carts">
+                <p class="nawi-translation">Як справи?</p>
+                <p class="nawi-translation">Ngaru lu fpom srak?</p>
+              </article>
+            </li>
+            <li class="nawi-item">
+              <article class="section-nawi">
+                <p class="nawi-translation">Все добре</p>
+                <p class="nawi-translation">Lu fpom</p>
+              </article>
+            </li>
+            <li class="nawi-item">
+              <article class="nawi-carts">
+                <p class="nawi-translation">Дякую</p>
+                <p class="nawi-translation">Irayo si</p>
+              </article>
+            </li>
+            <li class="nawi-item">
+              <article class="nawi-carts">
+                <p class="nawi-translation">Я бачу тебе</p>
+                <p class="nawi-translation">Oel ngati kameie</p>
+              </article>
+            </li>
+            <li class="nawi-item">
+              <article class="nawi-carts">
+                <p class="nawi-translation">Слідуй за мною!</p>
+                <p class="nawi-translation">Nong oet!</p>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="quotes">
+        <div class="container">
+          <h3 class="quote">
+            “ВСЯ ЕНЕРГІЯ ЛИШЕ ЗАПОЗИЧЕНА, ОДНОГО ДНЯ ЇЇ ДОВЕДЕТЬСЯ ПОВЕРНУТИ.”
+          </h3>
+          <p class="quote-author">Джейк Саллі</p>
+        </div>
       </section>
     </main>
-    <section class="trailer">
-      <a class="link-trailer" href="#">Дивитись трейлер</a>
-    </section>
-    <section class="quotes">
-      <h3 class="quote">
-        “ВСЯ ЕНЕРГІЯ ЛИШЕ ЗАПОЗИЧЕНА, ОДНОГО ДНЯ ЇЇ ДОВЕДЕТЬСЯ ПОВЕРНУТИ.”
-      </h3>
-      <p class="quote-author">Джейк Саллі</p>
-    </section>
-    <div class="nawi">
-      <h2 class="nawi-title">Вчимо мову На’ві</h2>
-      <article class="section-nawi">
-        <p class="nawi-translation">Привіт</p>
-        <p class="nawi-translation">Kaltxì</p>
-      </article>
-      <article class="section-nawi">
-        <p class="nawi-translation">Як справи?</p>
-        <p class="nawi-translation">Ngaru lu fpom srak?</p>
-      </article>
-      <article class="section-nawi">
-        <p class="nawi-translation">Все добре</p>
-        <p class="nawi-translation">Lu fpom</p>
-      </article>
-      <article class="section-nawi">
-        <p class="nawi-translation">Дякую</p>
-        <p class="nawi-translation">Irayo si</p>
-      </article>
-      <article class="section-nawi">
-        <p class="nawi-translation">Я бачу тебе</p>
-        <p class="nawi-translation">Oel ngati kameie</p>
-      </article>
-      <article class="section-nawi">
-        <p class="nawi-translation">Слідуй за мною!</p>
-        <p class="nawi-translation">Nong oet!</p>
-      </article>
-    </div>
     <footer class="footer">
       <div class="container">
         <a class="footer-link" href="#"
@@ -134,29 +172,27 @@
             src="./src/images/logotype.png"
             alt="Логотип підвалу"
         /></a>
-        <ul class="footer-information">
-          <li class="information-item">
-            <a class="emeil-link" href="avatartwowqa@gmail.com">Q&A E-mail</a>
-          </li>
-          <li class="information-item">
-            <a class="emeil-link" href="avatartwowqa@gmail.com"
-              >avatartwowqa@gmail.com</a
-            >
-          </li>
-          <li class="information-item">
-            <a class="emeil-link" href="avatartwowqa@gmail.com"
-              >Cooperation E-mail</a
-            >
-          </li>
-          <li class="information-item">
-            <a class="emeil-link" href="avatartwowqa@gmail.com"
-              >avatartwowcoop@gmail.com</a
-            >
-          </li>
-        </ul>
-        <p class="footer-text">
-          ©2023 Avatar: The Way Of Water. All rights reserved
-        </p>
+        <div class="information">
+          <ul class="footer-information">
+            <li class="information-item">
+              <a class="emeil-link" href="avatartwowqa@gmail.com">Q&A E-mail</a>
+              <a class="emeil-link" href="avatartwowqa@gmail.com"
+                >avatartwowqa@gmail.com</a
+              >
+            </li>
+
+            <li class="information-item">
+              <a class="emeil-link" href="avatartwowqa@gmail.com"
+                >Cooperation E-mail</a
+              ><a class="emeil-link" href="avatartwowqa@gmail.com"
+                >avatartwowcoop@gmail.com</a
+              >
+            </li>
+          </ul>
+          <p class="footer-text">
+            ©2023 Avatar: The Way Of Water. All rights reserved
+          </p>
+        </div>
       </div>
     </footer>
   </body>
