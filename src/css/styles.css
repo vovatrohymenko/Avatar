@@ -83,6 +83,11 @@ body {
   top: 65px;
   right: 50px;
 }
+@media (max-width: 1439px) {
+  .header-label {
+    position: static;
+  }
+}
 .header-input {
   appearance: none;
   width: 35px;
@@ -118,6 +123,8 @@ label {
   background-image: url(../images/background-heroO.jpg);
   padding-top: 180px;
   padding-bottom: 180px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .hero-container {
   display: flex;
@@ -166,6 +173,8 @@ label {
 
 .trailer {
   background-image: url(../images/background-trailerO.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 330px;
   padding-bottom: 330px;
 }
@@ -215,6 +224,8 @@ label {
       rgba(255, 255, 255, 0.34)
     ),
     url(../images/background-naviO.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-bottom: 60px;
 }
 .nawi-title {
@@ -289,6 +300,18 @@ label {
   padding-top: 40px;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-top: 80px;
+  padding-bottom: 25px;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+.footer-img {
+  background-image: url(../images/Line-footer.svg);
+}
+.information-item {
   display: flex;
   justify-content: space-between;
 }
@@ -297,10 +320,17 @@ label {
   font-size: 20px;
   text-align: justify;
   color: #fff;
-  display: flex;
-  justify-content: space-between;
+  flex-grow: 1;
 }
-.information-item {
+.information-name {
+  flex-grow: 1;
+  background-image: url(../images/dashes-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  margin-bottom: 16px;
 }
+
 .footer-text {
+  text-align: center;
+  margin-top: 21px;
 }
