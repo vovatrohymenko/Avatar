@@ -32,7 +32,7 @@ body {
       rgba(42, 72, 96, 0.87),
       rgba(43, 74, 97, 0.87)
     ),
-    url(../images/background-headerO.jpg);
+    url(../images/background-header.jpg);
   padding-top: 40px;
   border-bottom: solid 3px var(--ColorTextTertiary);
   background-size: cover;
@@ -120,7 +120,7 @@ label {
 /* ============================================MAIN============================================================= */
 /* ============================================HERO============================================================= */
 .hero {
-  background-image: url(../images/background-heroO.jpg);
+  background-image: url(../images/background-hero.jpg);
   padding-top: 180px;
   padding-bottom: 180px;
   background-repeat: no-repeat;
@@ -170,9 +170,9 @@ label {
   display: block;
   text-align: center;
 }
-
+/* ============================================TRAILER============================================================= */
 .trailer {
-  background-image: url(../images/background-trailerO.jpg);
+  background-image: url(../images/background-trailer.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 330px;
@@ -189,6 +189,7 @@ label {
   max-width: 260px;
   display: flex;
 }
+/* ============================================QUOTE============================================================= */
 .quote {
   font-family: var(--font-family);
   font-size: 36px;
@@ -223,7 +224,7 @@ label {
       rgba(255, 255, 255, 0.34),
       rgba(255, 255, 255, 0.34)
     ),
-    url(../images/background-naviO.jpg);
+    url(../images/background-navi.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 60px;
@@ -296,7 +297,7 @@ label {
       hsla(206, 39%, 27%, 0.87),
       rgba(43, 74, 97, 0.87)
     ),
-    url(../images/background-fotterO.jpg);
+    url(../images/background-fotter.jpg);
   padding-top: 40px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -308,12 +309,21 @@ label {
   justify-content: space-between;
   gap: 80px;
 }
-.footer-img {
-  background-image: url(../images/Line-footer.svg);
+.footer-logo::after {
+  content: "";
+  background-color: var(--ColorTextTertiary);
+  width: 2px;
+  height: 153px;
+}
+.footer-logo {
+  display: flex;
+  gap: 80px;
+  align-items: center;
 }
 .information-item {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 .information {
   font-family: var(--font-family);
@@ -322,12 +332,18 @@ label {
   color: #fff;
   flex-grow: 1;
 }
-.information-name {
+.information-name:nth-child(1) {
   flex-grow: 1;
-  background-image: url(../images/dashes-bottom.svg);
+  background-image: url(../images/dashes-top.svg);
   background-repeat: no-repeat;
   background-position: right center;
   margin-bottom: 16px;
+}
+.information-item:last-child .information-name {
+  flex-grow: 1;
+  background-image: url(../images/vector.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
 }
 
 .footer-text {
