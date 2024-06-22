@@ -198,7 +198,7 @@ label {
 .quotes {
   padding-top: 75px;
   text-align: center;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 .quote-author {
   margin-bottom: 8px;
@@ -234,7 +234,7 @@ label {
   font-size: 32px;
   text-align: center;
   padding-top: 60px;
-  padding-bottom: 45px;
+  margin-bottom: 45px;
 }
 .nawi-item:nth-child(1) {
   background-image: url(../images/arrow-left.svg);
@@ -286,8 +286,8 @@ label {
 
 .nawi-translation {
   font-family: var(--second-family);
-  padding-top: 40px;
-  padding-bottom: 36px;
+  padding-top: 36px;
+  margin-bottom: 36px;
   width: 320px;
 }
 /* ============================================FOOTER============================================================= */
@@ -332,6 +332,12 @@ label {
   color: #fff;
   flex-grow: 1;
 }
+.information-name {
+  font-size: 20px;
+}
+.information-link {
+  font-size: 20px;
+}
 .information-name:nth-child(1) {
   flex-grow: 1;
   background-image: url(../images/dashes-top.svg);
@@ -349,4 +355,5 @@ label {
 .footer-text {
   text-align: center;
   margin-top: 21px;
+  font-size: 14px;
 }
